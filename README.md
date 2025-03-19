@@ -65,3 +65,6 @@ pre-commit run -a
 - Advanced Concurrency Patterns
 - Design Patterns in Python
 - Cloud Deployment Best Practices
+
+## Flashcards
+https://ankipro.net/shared_deck/v2_Nb7zkkTV96_4961509
