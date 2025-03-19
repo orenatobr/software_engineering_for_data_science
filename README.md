@@ -70,4 +70,4 @@ poetry run pre-commit run -a
 - Cloud Deployment Best Practices
 
 ## 🂡 Flashcards
-<a href="https://ankipro.net/shared_deck/v2_Nb7zkkTV96_4961509" target="_blank" rel="noopener noreferrer">Click here</a>
+[![Visit Website](https://img.shields.io/badge/Open-Click%20Here-blue)](https://ankipro.net/shared_deck/v2_Nb7zkkTV96_4961509)
