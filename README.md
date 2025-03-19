@@ -36,16 +36,12 @@ software_engineering_python/
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/orenatobr/software_engineering_data_science.git
-cd software_engineering_python
+cd software_engineering_data_science
 ```
 
 ### 2️⃣ Install Dependencies (Poetry Recommended)
 ```bash
 poetry install
-```
-If using `pip`, install dependencies with:
-```bash
-pip install -r requirements.txt
 ```
 
 ### 3️⃣ Run the Application
