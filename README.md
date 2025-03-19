@@ -51,14 +51,14 @@ poetry run python src/main.py
 
 ### 4️⃣ Run Tests
 ```bash
-pytest tests/
+poetry run pytest tests/
 ```
 
 ### 5️⃣ Set Up Pre-Commit Hooks
 To ensure code quality before every commit:
 ```bash
 pre-commit install
-pre-commit run --all-files
+pre-commit run -a
 ```
 
 ## 🔥 Future Enhancements
