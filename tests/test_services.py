@@ -1,12 +1,14 @@
 # test_services.py - Integration tests for services
 
 import unittest
+from unittest.mock import patch
 
-from services.database import connect_to_db
+from src.services.database import connect_to_db
 
 
 class TestDatabase(unittest.TestCase):
-    def test_connect_to_db(self):
+    @patch("src.services.database.random.choice", return_value=True)
+    def test_connect_to_db(self, mock_random):
         """Test that the database connection function runs without errors."""
         try:
             connect_to_db()

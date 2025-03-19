@@ -2,7 +2,7 @@
 
 import unittest
 
-from util import format_response, validate_input
+from src.util import format_response, validate_input
 
 
 class TestMain(unittest.TestCase):
