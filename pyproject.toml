@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "software-engineering-python"
+version = "0.1.0"
+description = "Python-based software engineering best practices, including API, database, concurrency, and testing."
+authors = ["Renato F Pereira <orenatobr@icloud.com>"]
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11.8"
+flask = "^2.2.0"  # Lightweight web framework for API
+numpy = "^1.24.0"  # Numerical computations
+pandas = "^1.5.3"  # Data handling and analysis
+requests = "^2.28.0"  # HTTP requests for APIs
+gunicorn = "^23.0.0"
+uvicorn = "^0.34.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"  # Testing framework
+black = "^23.1.0"  # Code formatting
+isort = "^5.11.0"  # Import sorting
+pre-commit = "^4.2.0"
+
+[tool.poetry.scripts]
+start = "src.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
