@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "kill-process-on-port",
+            "type": "shell",
+            "command": "lsof -ti :5050 | xargs kill -9",
+            "problemMatcher": []
+        }
+    ]
+}
