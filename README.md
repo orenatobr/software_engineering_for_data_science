@@ -13,6 +13,12 @@ This repository contains best practices for **Software Engineering** using **Pyt
 ## 📂 Project Structure
 ```
 software_engineering_python/
+│── .github/
+│   ├── workflows
+│   │   ├── generator-generic-ossf-slsa3-publish.yml
+│   │   ├── python-app.yml
+│── docs/  # Documentation
+│── notebooks/  # Jupyter Notebooks for analysis
 │── src/  # Main source code
 │   ├── main.py  # Entry point
 │   ├── utils.py  # Helper functions
@@ -22,13 +28,10 @@ software_engineering_python/
 │── tests/  # Automated tests
 │   ├── test_main.py  # Unit tests
 │   ├── test_services.py  # Integration tests
-│── docs/  # Documentation
-│── notebooks/  # Jupyter Notebooks for analysis
-│── pyproject.toml  # Poetry dependency management
-│── README.md  # Project documentation
-│── requirements.txt  # Dependencies for non-Poetry users
 │── .gitignore  # Files ignored in the repository
 │── .pre-commit-config.yaml  # Pre-commit hooks
+│── pyproject.toml  # Poetry dependency management
+│── README.md  # Project documentation
 ```
 
 ## 🚀 Getting Started
@@ -57,8 +60,8 @@ poetry run pytest tests/
 ### 5️⃣ Set Up Pre-Commit Hooks
 To ensure code quality before every commit:
 ```bash
-pre-commit install
-pre-commit run -a
+poetry run pre-commit install
+poetry run pre-commit run -a
 ```
 
 ## 🔥 Future Enhancements
